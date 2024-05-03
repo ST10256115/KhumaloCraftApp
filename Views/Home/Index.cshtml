@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container">
+    <h2>Welcome to the official KhumaloCraft website</h2>
+    <p>Khumalo Craft thrives on providing you with authentic african craftwork for unbelievable prices</p>
+
+    <div>
+        <h3>How can we serve you today</h3>
+        <ul>
+            <li>@Html.ActionLink("About Us", "About", "Home")</li>
+            <li>@Html.ActionLink("My Work", "MyWork", "Home")</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+ 
+        </ul>
+    </div>
+</div> 
