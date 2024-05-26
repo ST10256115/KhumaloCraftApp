@@ -1,0 +1,13 @@
+﻿
+@model string
+
+<h2>Customer Login</h2>
+
+<form asp-controller="Customer" asp-action="Login" method="post">
+    <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" value="@Model" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+

@@ -1,0 +1,22 @@
+﻿
+@model IEnumerable<KhumaloCraft.ViewModels.OrderDetailsViewModel>
+
+<h2>Your Orders</h2>
+
+@foreach (var order in Model)
+{
+    <div class="order">
+        <h3>Order ID: @order.OrderID</h3>
+        <p>Order Date: @order.OrderDate</p>
+        <p>Total Amount: @order.TotalAmount.ToString("C")</p>
+        <p>Status: @order.Status</p>
+
+        <h4>Order Items</h4>
+        <ul>
+            @foreach (var item in order.OrderItems)
+            {
+                <li>@item.ProductName - @item.Quantity x @item.UnitPrice.ToString("C")</li>
+            }
+        </ul>
+    </div>
+}
